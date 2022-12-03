@@ -143,7 +143,7 @@ MEDIA_ROOT=os.path.join(BASE_DIR,'meida')
 
 CHANNEL_LAYERS = {
     'default': {
-        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+         "BACKEND": "django_redis.cache.RedisCache",
         # 'CONFIG': {
         #     'hosts': [('127.0.0.1', 6379)],
         # }
